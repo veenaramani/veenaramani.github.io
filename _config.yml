@@ -1,0 +1,46 @@
+title: "Veena Ramani — UX Engineering Specialist"
+description: "Portfolio showcasing UX Engineering, Design Systems, Interaction Design, Accessibility, and end-to-end UX case studies."
+url: "https://veenaramani.github.io"
+baseurl: ""
+
+# -------- THEME --------
+theme: minima     # clean, modern, and perfect for case studies
+
+# -------- SEO + MARKDOWN --------
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# -------- NAVIGATION (minima supports custom nav) --------
+# These will appear in your site header
+header_pages:
+  - index.md
+  - about.md
+  - projects/index.md
+
+# -------- SOCIAL LINKS (auto-appears in footer if theme supports) --------
+author:
+  name: "Veena Ramani"
+  email: ""          # optional — add if you want
+  github: "veenaramani"
+  linkedin: ""       # add your LinkedIn URL
+
+# -------- STYLING OVERRIDES (optional) --------
+# Add a custom CSS file if you want later:
+# sass:
+#   style: compressed
+
+# -------- COLLECTIONS FOR CASE STUDIES --------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# -------- DEFAULTS --------
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: page
